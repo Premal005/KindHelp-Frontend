@@ -45,10 +45,10 @@ const NeedyForm = () => {
   };
 
   const handleFetch = async () => {
-    if (!formData.emailid) return alert("Email ID is required");
+    if (!email) return alert("Email ID is required");
     try {
       const resp = await axios.post(server_url + "/needy/fetch", {
-        emailid: formData.emailid,
+        emailid: email,
       });
       if (resp.data.status) setFormData(resp.data.data);
       else alert(resp.data.msg);
