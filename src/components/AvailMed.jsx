@@ -91,7 +91,7 @@ const AvailMed = () => {
                 <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
                 Email ID
               </label>
-              <input disabled
+              <input 
                 type="email"
                 name="emailid"
                 value={formData.emailid}
@@ -99,6 +99,7 @@ const AvailMed = () => {
                 placeholder="your.email@example.com"
                 required
                 className="w-full px-4 py-3 text-sm border-0 rounded-xl bg-white/70 backdrop-blur-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none transition-all duration-200 shadow-sm"
+                disabled
               />
             </div>
 

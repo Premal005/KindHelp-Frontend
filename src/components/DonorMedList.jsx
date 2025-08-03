@@ -103,11 +103,12 @@ const DonorMedicineList = () => {
                 <Search className="w-4 h-4 text-indigo-500" />
                 Email ID
               </label>
-              <input disabled
+              <input 
                 type="email"
                 value={emailid}
                 onChange={(e) => setEmailid(e.target.value)}
                 placeholder="Enter your email to fetch medicines"
+                disabled
                 className="w-full px-4 py-3 border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200"
               />
             </div>

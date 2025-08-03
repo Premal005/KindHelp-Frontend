@@ -282,12 +282,13 @@ const DonorForm = () => {
                   Email ID
                 </label>
                 <div className="flex gap-3">
-                  <input disabled
+                  <input 
                     type="email"
                     name="emailid"
                     value={formData.emailid}
                     onChange={handleChange}
                     placeholder="your.email@example.com"
+                    disabled
                     className="flex-1 px-4 py-3 text-sm border-0 rounded-xl bg-white/70 backdrop-blur-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none transition-all duration-200 shadow-sm"
                   />
                   <button

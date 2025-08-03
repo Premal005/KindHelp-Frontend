@@ -130,10 +130,11 @@ const NeedyForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="text-sm font-medium text-gray-700">Email ID</label>
-            <input disabled
+            <input 
               name="emailid"
               value={email}
               onChange={handleChange}
+              disabled
               className="w-full mt-2 border border-gray-300 px-4 py-3 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
             />
           </div>
