@@ -91,7 +91,7 @@ const AvailMed = () => {
                 <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
                 Email ID
               </label>
-              <input
+              <input disabled
                 type="email"
                 name="emailid"
                 value={formData.emailid}

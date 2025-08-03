@@ -282,7 +282,7 @@ const DonorForm = () => {
                   Email ID
                 </label>
                 <div className="flex gap-3">
-                  <input
+                  <input disabled
                     type="email"
                     name="emailid"
                     value={formData.emailid}

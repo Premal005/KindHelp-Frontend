@@ -103,7 +103,7 @@ const DonorMedicineList = () => {
                 <Search className="w-4 h-4 text-indigo-500" />
                 Email ID
               </label>
-              <input
+              <input disabled
                 type="email"
                 value={emailid}
                 onChange={(e) => setEmailid(e.target.value)}
