@@ -6,6 +6,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import {server_url} from '../config/url'
+import { useEffect } from "react";
+import { jwtDecode } from "jwt-decode";
 
 const NeedyForm = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +20,20 @@ const NeedyForm = () => {
     frontadharurl: "",
     backadharurl: "",
   });
+
+  const [email, setEmailid] = useState("");
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      try {
+        const decoded = jwtDecode(token);
+        setEmailid(decoded.uid || "");
+      } catch (err) {
+        console.error("Invalid token:", err);
+      }
+    }
+  }, []);
 
   const [frontPreview, setFrontPreview] = useState(null);
   const [backPreview, setBackPreview] = useState(null);
@@ -116,7 +132,7 @@ const NeedyForm = () => {
             <label className="text-sm font-medium text-gray-700">Email ID</label>
             <input
               name="emailid"
-              value={formData.emailid}
+              value={email}
               onChange={handleChange}
               className="w-full mt-2 border border-gray-300 px-4 py-3 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
             />
