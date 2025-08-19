@@ -40,10 +40,10 @@ const MeetTheTeam = () => {
       icon: Award
     },
     {
-      name: "Premal Goyal",
+      name: "Avinashwar Tiwari",
       role: "Lead Developer", 
       category: "Developed By",
-      image: "/Premal_Goyal2.jpg", // Replace with your actual image path
+      image: "/avi.png", // Replace with your actual image path
       bgGradient: "from-indigo-50 to-blue-50",
       borderColor: "border-indigo-200",
       roleColor: "text-indigo-600",
