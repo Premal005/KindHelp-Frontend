@@ -194,7 +194,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto">
           <div className={`flex flex-col md:flex-row items-center justify-between gap-4 transform transition-all duration-700 delay-1000 ${footerInView ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <p className="text-gray-400 text-sm">
-              © 2025 KindHelp. All Rights Reserved. Made with ❤️ for humanity.
+              © 2024 KindHelp. All Rights Reserved. Made with ❤️ for humanity.
             </p>
             <div className="flex gap-6 text-sm text-gray-400">
               <a href="/privacy" className="hover:text-[#5B3FFF] transition-colors">Privacy Policy</a>
