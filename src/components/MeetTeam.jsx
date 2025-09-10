@@ -40,7 +40,7 @@ const MeetTheTeam = () => {
       icon: Award
     },
     {
-      name: "Avinashwar Tiwari",
+      name: "Premal Goyal",
       role: "Lead Developer", 
       category: "Developed By",
       image: "/avi.png", // Replace with your actual image path
