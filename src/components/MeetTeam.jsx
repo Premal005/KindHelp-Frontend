@@ -29,16 +29,7 @@ const MeetTheTeam = () => {
   const [teamRef, teamInView] = useInView({ once: true });
 
   const teamMembers = [
-    {
-      name: "Mr. Rajesh Bansal",
-      role: "Project Mentor",
-      category: "Under the Guidance of",
-      image: "/Rajesh_Sir.jpg", // Replace with your actual image path
-      bgGradient: "from-purple-50 to-indigo-50",
-      borderColor: "border-purple-200",
-      roleColor: "text-purple-600",
-      icon: Award
-    },
+    
     {
       name: "Premal Goyal",
       role: "Lead Developer", 
@@ -73,7 +64,7 @@ const MeetTheTeam = () => {
       </div>
 
       {/* Team Members Grid */}
-      <div className="grid gap-12 md:grid-cols-2 max-w-5xl mx-auto relative z-10">
+      <div className="grid gap-0 md:grid-cols-2 max-w-5xl mx-auto relative z-10 ">
         {teamMembers.map((member, i) => (
           <div
             key={i}
